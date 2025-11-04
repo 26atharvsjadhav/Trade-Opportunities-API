@@ -15,7 +15,8 @@ README (Setup & Usage)
    - DEMO_PASSWORD=demo123                                
 
 3) Run the server
-   uvicorn app:app --reload --port 8000
+
+   python -m uvicorn main:app --host 127.0.0.1 --port 8000  
 
 4) Auth (simple JWT demo)
    - POST /auth/login   {"username":"demo","password":"demo123"}
